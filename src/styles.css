@@ -1,0 +1,234 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Fullscreen Mode */
+
+.fullscreen-mode {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ background-color: #a0aec0;
+  z-index: 1000;
+}
+.fullscreen-mode .navbar {
+  display: none;
+}
+
+.fullscreen-mode .main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1f2937;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #a0aec0;
+}
+
+.navbar .fullscreen-btn {
+  background-color: #374151;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.navbar .fullscreen-btn:hover {
+  background-color: #4b5563;
+}
+
+/* Homepage */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.homepage h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.homepage .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.homepage .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #2563eb;
+  color: white;
+}
+
+.homepage .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Chessboard */
+.chess-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 234, 234);
+ 
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.chess-container .buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.chess-container .btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: #2563eb;
+  color: white;
+}
+
+.chess-container .btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.chess-container .info {
+  text-align: center;
+  font-size: 2rem;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.chess-container .btn.join {
+  background-color: #2563eb;
+}
+
+.chess-container .btn.create {
+  background-color: #16a34a;
+}
+
+.chess-container .leave-btn {
+  background-color: #dc2626;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+.game-result {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #28a745; /* Green for win */
+  margin: 10px 0;
+}
+
+.game-result:contains("Lost") {
+  color: #dc3545; /* Red for loss */
+}
+
+.game-result:contains("Draw") {
+  color: #ffc107; /* Yellow for draw */
+}
+
+.chess-container .leave-btn:hover {
+  background-color: #b91c1c;
+}
+.about-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.about-container h1, .about-container h2 {
+  color: #333;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  text-align: left;
+  margin: 10px 20px;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+
