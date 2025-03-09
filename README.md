@@ -1,12 +1,28 @@
-# React + Vite
+# ♟️ Multiplayer Chess Game  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A real-time multiplayer **Chess Game** built using **React, Vite, react-chessboard, and Firebase**. This project allows users to play chess online with friends or random opponents in a smooth, interactive environment.  
 
-Currently, two official plugins are available:
+## 🚀 Features  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔥 **Real-time Multiplayer** – Play with friends or random opponents using Firebase.  
+- 🎨 **Interactive UI** – Uses `react-chessboard` for a responsive and elegant chessboard.  
+- ⚡ **Optimized Performance** – Built with **Vite** for a fast and smooth experience.  
+- ✅ **Move Validation** – Ensures only legal moves are allowed.  
+- 💾 **Game State Persistence** – Saves games so players can resume later.   
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Vite, react-chessboard  
+- **Backend:** Firebase (Realtime Database)  
+- **Deployment:** https://chessgrandmaster.netlify.app/ (Netlify) 
+
+## 📷 Preview  
+
+<img width="959" alt="image" src="https://github.com/user-attachments/assets/e3ce9e88-b4a6-49f1-8e63-d33388e09b26" />
+
+## 🎮 How to Play  
+
+1. **Create/Join a Game** – Start a new match or join an existing one.  
+2. **Make Your Moves** – Play chess with real-time updates.  
+3. **Win the Game** – Checkmate your opponent’s king!  
+
